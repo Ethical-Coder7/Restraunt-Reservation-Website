@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Delish Dine | Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+  <style>
+    .simplified-contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px 80px;
+    }
+    .simplified-contact .info-item {
+      margin-bottom: 32px;
+    }
+    .simplified-contact .label {
+      font-size: 0.75rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-logo"><a href="Index.html">Delish<span>Dine</span></a></div>
+    <ul>
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div id="contact">
+    <div class="page-header">
+      <p class="eyebrow">We'd love to hear from you</p>
+      <h2>Contact Us</h2>
+    </div>
+    
+    <div class="simplified-contact">
+      <div class="contact-info">
+        <div class="info-item">
+          <p class="label">Address</p>
+          <p>Cyber Hub, DLF Phase 2<br>Gurugram, Haryana 122002</p>
+        </div>
+        <div class="info-item">
+          <p class="label">Phone</p>
+          <p>+91 98765 43210</p>
+        </div>
+        <div class="info-item">
+          <p class="label">Email</p>
+          <p>hello@delishdine.in</p>
+        </div>
+        <div class="info-item">
+          <p class="label">Hours</p>
+          <p>Mon – Fri: 12:30 PM – 11 PM<br>Sat – Sun: 12:00 PM – 11 PM</p>
+        </div>
+      </div>
+    </div>
+    
+    <footer>
+      <span class="logo-sm">DelishDine</span>
+      <span>© 2026 Delish Dine. All rights reserved.</span>
+    </footer>
+  </div>
+
+  <script>
+    // Handles the dark background transition for the navbar on scroll
+    window.addEventListener('scroll', () => { 
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 30); 
+    });
+  </script>
+</body>
+</html>

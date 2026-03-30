@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Delish Dine | Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-logo"><a href="Index.html">Delish<span>Dine</span></a></div>
+    <ul>
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div id="gallery">
+    <div class="page-header">
+      <p class="eyebrow">A visual journey</p>
+      <h2>Gallery</h2>
+    </div>
+    
+    <div class="gallery-grid">
+      <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=800" alt="Restaurant Interior" loading="lazy">
+      </div>
+      
+      <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800" alt="Table Setup" loading="lazy">
+      </div>
+      
+      <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800" alt="Chef Plating Food" loading="lazy">
+      </div>
+      
+      <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=800" alt="Food Spread" loading="lazy">
+      </div>
+      
+      <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800" alt="Wood-Fired Pizza" loading="lazy">
+      </div>
+      
+      <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=800" alt="Indian Curry" loading="lazy">
+      </div>
+      
+      <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800" alt="Craft Cocktails" loading="lazy">
+      </div>
+      
+      <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800" alt="Pouring Wine" loading="lazy">
+      </div>
+      
+      <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=800" alt="Pasta Dish" loading="lazy">
+      </div>
+      
+      <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800" alt="Mutton Dish" loading="lazy">
+      </div>
+      
+      <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800" alt="Restaurant Atmosphere" loading="lazy">
+      </div>
+      
+      <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=800" alt="Decadent Dessert" loading="lazy">
+      </div>
+    </div>
+    
+    <footer>
+      <span class="logo-sm">DelishDine</span>
+      <span>© 2026 Delish Dine. All rights reserved.</span>
+    </footer>
+  </div>
+
+  <div id="lightbox">
+    <span id="lightbox-close" onclick="closeLightbox()">✕</span>
+    <img id="lightbox-img" src="" alt="Gallery image enlarged">
+  </div>
+
+  <script>
+    // Handles the dark background transition for the navbar on scroll
+    window.addEventListener('scroll', () => { 
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 30); 
+    });
+  </script>
+  
+  <script src="js/lightbox.js"></script>
+</body>
+</html>
